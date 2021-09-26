@@ -1,0 +1,156 @@
+* {margin: 0; padding: 0;}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Verdana, Arial, "Comic Sans Ms";
+	font-size: 14px;
+	color: #fff;
+	background-image: url(../jpg/desen.jpg);
+	background-repeat: repeat;
+/*	background-image: -moz-linear-gradient(top, #555, #fff);
+	background-repeat: no-repeat;*/
+}
+
+a:link, a:visited {
+	color: #00f;
+}
+
+.all {
+	width: 1000px;
+	background-color: #fff;
+	margin: 10px auto;
+	min-height: 500px;
+	border: 1px solid #555;
+	border-radius: 15px;
+}
+
+.baner {
+	font-size: 40px;
+	width: auto;
+	height: 150px;
+	color: #4F6F9E;
+	text-align: center;
+	margin: 10px 10px 0px 10px;
+	border-bottom: 5px solid #4F6F9E;
+}
+
+div.baner p {
+	padding-top: 45px;
+}
+
+.menugorne {
+	width: auto;
+	height: auto;
+	margin: 10px;
+}
+
+ul, ul li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 15px;
+	padding: 0;
+}
+
+ul li a:link, ul li a:visited {
+	display: block;
+	text-decoration: none;
+	color: #555;
+	padding: 5px 10px;
+	border: 1px solid #555;
+	border-radius: 15px;
+}
+
+ul li a:hover {
+	text-decoration: underline;
+}
+
+.przycisk /* dotyczy przycisku nieaktywnego */
+{
+	display: block;
+	color: #fff;
+	background-color: #c30000;
+	padding: 5px 10px;
+	border-radius: 15px;
+	border: 1px solid #555;
+	font-weight: bold;
+}
+
+.paseklogin /* pasek wskazujący aktualny login*/
+{
+	width: auto;
+	background-color: #4F6F9E;
+	padding: 5px;
+	color: #fff;
+	height: auto;
+	text-align: right;
+	font-style:italic;
+	margin: 10px;
+	font-size:12px;
+}
+
+div.paseklogin a:link, div.paseklogin a:visited {
+	color: #fff;
+}
+
+.tresc {
+	width: auto;
+	background-color: #fff;
+	min-height: 500px;
+	margin: 10px;
+	padding: 10px;
+	border: 1px solid #555;
+	color: #555;
+	border-radius: 15px;
+}
+
+div.kontakt, div.tematy {
+	width: 500px;
+	min-height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #555;
+	border-radius: 10px;
+	margin-top: 10%; /* pozycjonowanie w pionie */
+	padding: 10px;
+	text-align: center;
+}
+
+div.tematy {
+	text-align: left;
+	width: 400px;
+}
+
+table /* dotyczy tabel zawierających pola formularzy dodania i edycji kontaktu */
+{
+	text-align: left;
+}
+
+table.wyswietlanie td /* tabela do wyświetlenia treści kontaktu */
+{
+	padding: 5px 10px;
+}
+
+.srodek /* środkowy blok zawierający komunikat powitalny, formularz logowania, rejestracji, zmiany hasła */
+{
+	width: 300px;
+	min-height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #555;
+	text-align: center;
+	border-radius: 10px;
+	margin-top: 15%; /* pozycjonowanie w pionie */
+	padding: 10px;
+}
+
+.stopka {
+	width: auto;
+	min-height: 40px;
+	text-align: center;
+	margin: 0px 10px;
+	border-top: 4px solid #4F6F9E;
+	color: #555;
+	font-size: 10px;
+	padding-top: 10px;
+}
