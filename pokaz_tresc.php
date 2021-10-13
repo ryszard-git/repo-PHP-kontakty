@@ -74,7 +74,7 @@ echo '</table><br /><hr /><br />';
 if (isset($_SESSION['zalogowany']) && ($_SESSION['zalogowany']==="tak"))
 {
 	echo '<a title="Edytuj ten kontakt" href="edytuj_kontakt.php?id_kontakt='.$id_kontakt.'">Edytuj</a>&nbsp;&nbsp;&nbsp;';
-	echo '<a title="Usuń ten kontakt" href="usun_kontakt.php?id_kontakt='.$id_kontakt.'">Usuń</a>';
+	echo '<a style="float:right;" title="Usuń ten kontakt" href="usun_kontakt.php?id_kontakt='.$id_kontakt.'">Usuń</a>';
 }
 
 $mysqli->close();
