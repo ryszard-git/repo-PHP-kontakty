@@ -38,6 +38,7 @@ public function WyswietlNaglowek()
 <head>
 <meta charset="utf-8">
 <link rel="stylesheet" href="css/kontakty.css">
+<script src="js/kontakty.js" defer></script>
 <title><?php echo $this->tytul; ?></title>
 </head>
 <body>
