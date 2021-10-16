@@ -73,8 +73,11 @@ echo '</table><br /><hr /><br />';
 
 if (isset($_SESSION['zalogowany']) && ($_SESSION['zalogowany']==="tak"))
 {
-	echo '<button type="button" style="cursor:pointer;" onclick="edycja('.$id_kontakt.')">Edytuj</button>';
-	echo '<button type="button" style="float:right; cursor:pointer;" onclick="zapytaj('.$id_kontakt.')">Usuń</button>';
+	$akcja=0; //0 - edycja
+	echo '<button type="button" style="cursor:pointer;" onclick="zapytaj('.$id_kontakt.','.$akcja.')">Edytuj</button>';
+	$akcja=1; //1 - usuniecie
+	echo '<button type="button" style="float:right; cursor:pointer;" onclick="zapytaj('.$id_kontakt.','.$akcja.')">Usuń</button>';
+	unset($akcja);
 }
 
 $mysqli->close();

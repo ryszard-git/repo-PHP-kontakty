@@ -1,13 +1,22 @@
-function zapytaj(idkontakt)
+function zapytaj(idkontakt,akcja)
 {
-	let wynik = confirm("Usunąć ten kontakt ?");
-	if (wynik == true)
+	switch(akcja)
 	{
-		window.location.href = "usun_kontakt.php?id_kontakt=" + idkontakt;
+		//1 - usuniecie
+		case 1:
+			let wynik = confirm("Usunąć ten kontakt ?");
+			if (wynik == true)
+			{
+				window.location.href = "usun_kontakt.php?id_kontakt=" + idkontakt;
+			}
+		break;
+		
+		//0 - edycja
+		case 0:
+			window.location.href = "edytuj_kontakt.php?id_kontakt=" + idkontakt;
+		break;
+		
+		default:
+			alert("Niewłaściwa opcja");
 	}
-}
-
-function edycja(idkontakt)
-{
-	window.location.href = "edytuj_kontakt.php?id_kontakt=" + idkontakt;
 }
